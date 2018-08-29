@@ -20,7 +20,7 @@ innovative technology. Cbp Quark is also powered by Blackcoin
 Proof-of-Stake 3.0 and Bitcoin core 0.10x code base using Quark
 
 
-hashing algorithm with a block time of just 120 seconds.
+hashing algorithm with a block time of just 60 seconds.
 
 
 A peer-to-peer digital currency that provides fast, zero cost payments to
