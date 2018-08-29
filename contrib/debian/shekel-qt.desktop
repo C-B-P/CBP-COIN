@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Cbp
+Comment=Cbp P2P Cryptocurrency
+Comment[fr]=Cbp, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Cbp, eşten eşe kriptografik sanal para birimi
+Exec=cbp-qt %u
+Terminal=false
+Type=Application
+Icon=cbp128
+MimeType=x-scheme-handler/cbp;
+Categories=Office;Finance;

@@ -1,0 +1,26 @@
+# /etc/conf.d/cbpd: config file for /etc/init.d/cbpd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/cbp/cbp.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/cbpd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/cbpd.pid"
+
+# Where to write cbpd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/cbpd"
+
+# User and group to own cbpd process
+#BITCOIND_USER="cbp"
+#BITCOIND_GROUP="cbp"
+
+# Path to cbpd executable
+#BITCOIND_BIN="/usr/bin/cbpd"
+
+# Nice value to run cbpd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -1,0 +1,26 @@
+[Unit]
+Description=Cbp's distributed currency daemon
+After=network.target
+
+[Service]
+User=cbp
+Group=cbp
+
+Type=forking
+PIDFile=/var/lib/cbpd/cbpd.pid
+
+ExecStart=/usr/bin/cbpd -daemon -pid=/var/lib/cbpd/cbpd.pid \
+          -conf=/etc/cbp/cbp.conf -datadir=/var/lib/cbpd
+
+ExecStop=-/usr/bin/cbp-cli -conf=/etc/cbp/cbp.conf \
+         -datadir=/var/lib/cbpd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
